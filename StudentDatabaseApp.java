@@ -6,5 +6,6 @@ public class StudentDatabaseApp {
 
         s1.enroll();
         s1.pay();
+        s1.showInfo();
     }
 }

@@ -27,7 +27,7 @@ public class Student {
 
         setStudentID();
 
-        System.out.println(firstName+ " " +lastName+ " " +gradeYear+ " " +studentID);
+        //System.out.println(firstName+ " " +lastName+ " " +gradeYear+ " " +studentID);
     }
 
     public void setStudentID() {
@@ -48,7 +48,7 @@ public class Student {
             if(!course.equals("Q")) {
 
                 tutionBalance += costOfcourse;
-                courses = courses +"\n"+ course;
+                courses = courses +"\n  "+ course;
             }
             else {
 
@@ -57,7 +57,7 @@ public class Student {
 
         } while(1>0);
 
-        System.out.println("Enrolled in : " +courses);
+        //System.out.println("Enrolled in : " +courses);
         viewBalance();
     }
 
@@ -77,6 +77,14 @@ public class Student {
 
         tutionBalance -=payment;
 
-        viewBalance();
+        //viewBalance();
+    }
+
+    public void showInfo() {
+
+        System.out.println("Name : " +firstName+ " " +lastName);
+        System.out.println("ID : " +studentID);
+        System.out.println("Courses enrolled : " +courses);
+        System.out.println("Balance : " +tutionBalance);
     }
 }
