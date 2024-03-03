@@ -28,6 +28,7 @@ public class Student {
         setStudentID();
 
         //System.out.println(firstName+ " " +lastName+ " " +gradeYear+ " " +studentID);
+
     }
 
     public void setStudentID() {
